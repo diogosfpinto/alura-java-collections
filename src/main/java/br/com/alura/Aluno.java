@@ -32,6 +32,10 @@ public class Aluno {
         this.numeroMatricula = numeroMatricula;
     }
 
+
+    /** Sobreescreve o método equals para comparar se um objeto é igual ao outro pelo nome e número de matrícula.
+     * gerado pelo própria  IDE.
+     * */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -40,6 +44,9 @@ public class Aluno {
         return numeroMatricula == aluno.numeroMatricula && Objects.equals(nome, aluno.nome);
     }
 
+    /** Sobreecreve o método hashCode da classe Object para calcular o hashCode baseado nos campos definidos.
+     * Extremamente recomendado quando se sobreescreve o método equals.
+     * */
     @Override
     public int hashCode() {
         return Objects.hash(nome, numeroMatricula);
