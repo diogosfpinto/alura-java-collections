@@ -23,7 +23,8 @@ public class TestaCursoComAluno {
         System.out.println(a1.getNome()+" está matriculado no curso "+javaColecoes.getNome()+"?");
         System.out.println(javaColecoes.estaMatriculado(a1));
 
-        Aluno turini = new Aluno("Rodrigo Turini", 3467321);
+        //Criando novo Aluno porém sem matriculá-lo em um curso.
+        Aluno turini = new Aluno("Rodrigo Turini", 346732);
 
         System.out.println("turini está matriculado no curso "+javaColecoes.getNome()+"?");
         System.out.println(javaColecoes.estaMatriculado(turini));
